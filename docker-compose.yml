@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  todo-database:
+    image: postgres:15.3-alpine3.18
+    environment:
+      - POSTGRES_PASSWORD=pswd
+    volumes:
+      - ./init-db.sql:/docker-entrypoint-initdb.d/init-db.sql
+    ports:
+      - "5432:5432"
