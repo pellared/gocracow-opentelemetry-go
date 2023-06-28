@@ -24,3 +24,8 @@ todo add "important work"
 todo list
 todo add "very long description that is extremely important"
 ```
+
+Browse exported telemetry:
+
+- [Traces](http://localhost:16686)
+- [Metrics](http://localhost:8889/metrics)
