@@ -88,7 +88,7 @@ func main() {
 			rw.WriteHeader(http.StatusInternalServerError)
 			return
 		}
-		taskCnt.Add(context.Background(), -1)
+		taskCnt.Add(context.Background(), 1)
 	}).Methods("POST")
 
 	r.HandleFunc("/{id:[0-9]+}", func(rw http.ResponseWriter, r *http.Request) {
